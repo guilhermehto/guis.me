@@ -3,5 +3,6 @@
 @tailwind utilities;
 
 html {
-	@apply text-gray-700;
+	@apply text-white;
+	background-color: theme('colors.ternary');
 }
