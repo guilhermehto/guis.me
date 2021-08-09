@@ -1,6 +1,6 @@
-export default function Home() {
+export default function Index() {
 	return (
-		<div className="flex items-center justify-center flex-col h-screen">
+		<div className="flex items-center justify-center flex-col h-screen font-body">
 			<div>Welcome. This is still a work in progress.</div>
 			<div>
 				While it&apos;s not done, please, feel free to check my old - and outdated -
