@@ -6,8 +6,10 @@ module.exports = {
 		extend: {
 			fontSize: {
 				'20xl': '24rem',
+				'15xl': '15rem',
 			},
 		},
+
 		colors: {
 			primary: '#9A8C98',
 			secondary: '#4A4E69',
