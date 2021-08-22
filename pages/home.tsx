@@ -1,4 +1,6 @@
+import { Icon } from '../components/Icon'
 import { Navbar } from '../components/Navbar'
+import { Project } from '../components/Project'
 import { Alignment, Section } from '../components/Section'
 
 export default function Home() {
@@ -16,10 +18,27 @@ export default function Home() {
 			<Navbar />
 
 			<Section alignment={Alignment.Left} title="About me">
-				<div className="text-7xl font-display my-auto w-3/4">
+				<div className="text-7xl font-display">
 					With experience in fullstack projects, i’m driven by creating beautiful
 					solutions that make an impact.
 				</div>
+			</Section>
+
+			<Section alignment={Alignment.Right} title="Projects">
+				<Project
+					title="Tic tac toe"
+					projectHref="https://multiplayer-tic-tac-toe-d4a70.web.app/"
+					repoHref="https://github.com/guilhermehto/tic-tac-toe-client"
+					description="Allow players to compete against each other in a multiplayer tic tac toe game.
+					Developed using Svelte, Socket.io, and Express. Hosted on Firebase."
+					techIcons={[
+						<Icon name="html5-plain" />,
+						<Icon name="javascript-plain" />,
+						<Icon name="nodejs-plain" />,
+						<Icon name="svelte-plain" />,
+						<Icon name="express-original" />,
+					]}
+				/>
 			</Section>
 		</div>
 	)

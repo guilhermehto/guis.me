@@ -9,22 +9,6 @@ html {
 	background-color: theme('colors.ternary');
 }
 
-.marker {
-	transform: translateX(0%);
-	display: inline-block;
-}
-
-.marker::after {
-	content: '';
-	width: 100%;
-	height: 80%;
-	background: theme('colors.secondary');
-	position: absolute;
-	z-index: -5;
-	left: -10%;
-	top: 35%;
-}
-
 .section-text {
 	writing-mode: vertical-lr;
 }

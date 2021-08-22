@@ -18,7 +18,7 @@ export const Section: React.FC<SectionProps> = ({
 	return (
 		<section className="w-screen flex max-w-full my-12 justify-between">
 			{alignment == Alignment.Left && <Title title={title} />}
-			{children}
+			<div className="my-auto w-3/4">{children}</div>
 			{alignment == Alignment.Right && <Title title={title} />}
 		</section>
 	)
@@ -29,5 +29,9 @@ type TitleProps = {
 }
 
 const Title: React.FC<TitleProps> = ({ title }) => {
-	return <div className="text-secondary font-display text-9xl section-text mr-10">{title}</div>
+	return (
+		<div className="text-secondary font-display text-9xl section-text mr-10 my-auto">
+			{title}
+		</div>
+	)
 }
