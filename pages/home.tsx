@@ -32,12 +32,14 @@ export default function Home() {
 					description="Allow players to compete against each other in a multiplayer tic tac toe game.
 					Developed using Svelte, Socket.io, and Express. Hosted on Firebase."
 					techIcons={[
-						<Icon name="html5-plain" />,
-						<Icon name="javascript-plain" />,
-						<Icon name="nodejs-plain" />,
-						<Icon name="svelte-plain" />,
-						<Icon name="express-original" />,
-					]}
+						'html5-plain',
+						'javascript-plain',
+						'nodejs-plain',
+						'svelte-plain',
+						'express-original',
+					].map((iconName) => (
+						<Icon key={iconName} name={iconName} />
+					))}
 				/>
 			</Section>
 		</div>

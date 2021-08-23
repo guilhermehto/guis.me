@@ -17,6 +17,7 @@ type ProjectProps = {
 	projectHref?: string
 	repoHref?: string
 }
+
 export const Project: React.FC<ProjectProps> = ({
 	title,
 	techIcons,
@@ -49,6 +50,10 @@ export const Project: React.FC<ProjectProps> = ({
 const generateIcons = (icons: ReactElement[]) => {
 	return icons.map((icon, index) => {
 		const techClassName = index > 0 ? 'ml-2' : ''
-		return <div className={techClassName}>{icon}</div>
+		return (
+			<div key={icon.props.name + index} className={techClassName}>
+				{icon}
+			</div>
+		)
 	})
 }
