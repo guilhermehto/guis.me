@@ -26,6 +26,7 @@ export default function Home() {
 
 			<Section alignment={Alignment.Right} title="Projects" id="projects">
 				<Project
+					className="ml-20"
 					title="Tic tac toe"
 					projectHref="https://multiplayer-tic-tac-toe-d4a70.web.app/"
 					repoHref="https://github.com/guilhermehto/tic-tac-toe-client"
@@ -43,6 +44,7 @@ export default function Home() {
 				/>
 
 				<Project
+					className="ml-20"
 					title="Old Portfolio"
 					projectHref="https://guilhermehto.dev"
 					repoHref="https://github.com/guilhermehto/portfolio"
@@ -52,6 +54,8 @@ export default function Home() {
 					))}
 				/>
 			</Section>
+
+			<Section alignment={Alignment.Left} title="Contact"></Section>
 		</div>
 	)
 }
