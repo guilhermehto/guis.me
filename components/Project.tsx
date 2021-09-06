@@ -1,5 +1,8 @@
 import React, { ReactElement } from 'react'
+import classnames from 'classnames'
+
 import { Link } from './Link'
+
 import styles from './Project.module.scss'
 
 type TitleProps = {
@@ -16,6 +19,7 @@ type ProjectProps = {
 	description: string
 	projectHref?: string
 	repoHref?: string
+	className?: string
 }
 
 export const Project: React.FC<ProjectProps> = ({
@@ -24,9 +28,12 @@ export const Project: React.FC<ProjectProps> = ({
 	description,
 	projectHref,
 	repoHref,
+	className,
 }) => {
+	const projectClasses = classnames([className, 'flex-col', 'my-6'])
+
 	return (
-		<section className="flex-col my-6">
+		<section className={projectClasses}>
 			<div>
 				<Title title={title} />
 				{projectHref && (
