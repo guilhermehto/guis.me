@@ -41,6 +41,16 @@ export default function Home() {
 						<Icon key={iconName} name={iconName} />
 					))}
 				/>
+
+				<Project
+					title="Old Portfolio"
+					projectHref="https://guilhermehto.dev"
+					repoHref="https://github.com/guilhermehto/portfolio"
+					description="My old portfolio, keeping it here as a way of keeping track how much I'm growing over the years. Made using hugo."
+					techIcons={['html5-plain', 'svelte-plain', 'go-plain'].map((iconName) => (
+						<Icon key={iconName} name={iconName} />
+					))}
+				/>
 			</Section>
 		</div>
 	)
