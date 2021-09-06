@@ -5,11 +5,11 @@ export const Navbar = () => {
 		<div className="flex px-5 font-display lg:text-4xl md:text-3xl sm:text-2xl">
 			<ul className="flex">
 				<li className="ml-20">
-					<Link href="#">About me</Link>
+					<Link href="#about-me">About me</Link>
 				</li>
 
 				<li className="ml-20">
-					<Link href="#">Projects</Link>
+					<Link href="#projects">Projects</Link>
 				</li>
 				<li className="ml-20">
 					<Link href="#">Contact</Link>

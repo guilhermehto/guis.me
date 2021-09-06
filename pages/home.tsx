@@ -17,14 +17,14 @@ export default function Home() {
 			</div>
 			<Navbar />
 
-			<Section alignment={Alignment.Left} title="About me">
+			<Section alignment={Alignment.Left} title="About me" id="about-me">
 				<div className="text-7xl font-display">
 					With experience in fullstack projects, i’m driven by creating beautiful
 					solutions that make an impact.
 				</div>
 			</Section>
 
-			<Section alignment={Alignment.Right} title="Projects">
+			<Section alignment={Alignment.Right} title="Projects" id="projects">
 				<Project
 					title="Tic tac toe"
 					projectHref="https://multiplayer-tic-tac-toe-d4a70.web.app/"

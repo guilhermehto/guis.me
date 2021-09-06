@@ -7,6 +7,7 @@
 html {
 	@apply text-white;
 	background-color: theme('colors.ternary');
+	scroll-behavior: smooth;
 }
 
 .section-text {
