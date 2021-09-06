@@ -18,7 +18,7 @@ export default function Home() {
 			<Navbar />
 
 			<Section alignment={Alignment.Left} title="About me" id="about-me">
-				<div className="text-7xl font-display">
+				<div className="text-7xl font-display text-justify">
 					With experience in fullstack projects, i’m driven by creating beautiful
 					solutions that make an impact.
 				</div>
