@@ -1,3 +1,4 @@
+import { ContactForm } from '../components/ContactForm'
 import { Icon } from '../components/Icon'
 import { Navbar } from '../components/Navbar'
 import { Project } from '../components/Project'
@@ -55,7 +56,11 @@ export default function Home() {
 				/>
 			</Section>
 
-			<Section alignment={Alignment.Left} title="Contact"></Section>
+			{/* <Section alignment={Alignment.Left} title="Contact">
+				<div className="margin-auto">
+					<ContactForm />
+				</div>
+			</Section> */}
 		</div>
 	)
 }
