@@ -21,7 +21,7 @@ export const Input: React.FC<InputProps> = ({
 	type = 'text',
 }) => {
 	const inputClasses = classnames([
-		'appearance-none border-b-4 font-display  text-5xl text-center text-secondary p-2 focus:outline-none bg-ternary',
+		'appearance-none border-b-4 border-secondary font-display  text-5xl text-center text-white p-2 focus:outline-none bg-ternary',
 		className,
 	])
 	return (
