@@ -4,7 +4,7 @@ import classnames from 'classnames'
 type InputProps = {
 	label?: string
 	value?: string | number
-	onChange?: (event) => void
+	onChange?: (event: React.FormEvent) => void
 	className?: string
 	id?: string
 	name?: string
