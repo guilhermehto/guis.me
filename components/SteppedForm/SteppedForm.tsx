@@ -73,7 +73,10 @@ const StepIndicator: React.FC<StepIndicatorProps> = ({ steps, currentStep }) => 
 
 	for (let index = 0; index < steps; index++) {
 		stepIndicator.push(
-			<div className={currentStep === index ? activeStepClasses : stepClasses}></div>
+			<div
+				className={currentStep === index ? activeStepClasses : stepClasses}
+				key={index}
+			></div>
 		)
 	}
 	return <> {stepIndicator} </>
