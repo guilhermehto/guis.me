@@ -56,11 +56,11 @@ export default function Home() {
 				/>
 			</Section>
 
-			{/* <Section alignment={Alignment.Left} title="Contact">
+			<Section alignment={Alignment.Left} title="Contact">
 				<div className="margin-auto">
 					<ContactForm />
 				</div>
-			</Section> */}
+			</Section>
 		</div>
 	)
 }

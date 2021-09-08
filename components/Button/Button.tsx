@@ -6,24 +6,31 @@ import styles from './Button.module.scss'
 type ButtonProps = {
 	type?: 'button' | 'reset' | 'submit'
 	color?: 'primary' | 'secondary'
-	dropShadowSide?: 'left' | 'right'
+	dropShadowSide?: 'left' | 'right' | 'center'
 	className?: string
 	onClick: VoidFunction
 }
 
-export const Button: React.FC<ButtonProps> = (props) => {
+export const Button: React.FC<ButtonProps> = ({
+	children,
+	type = 'button',
+	color,
+	dropShadowSide = 'left',
+	className,
+	onClick,
+}) => {
 	const buttonClasses = classnames([
 		styles.button,
 		'font-display',
 		'text-5xl',
-		props.dropShadowSide === 'right' ? styles['right-shadow'] : styles['left-shadow'],
-		props.className,
-		props.color || 'primary',
+		styles[`${dropShadowSide}-shadow`],
+		className,
+		color || 'primary',
 	])
 
 	return (
-		<button className={buttonClasses} type={props.type || 'button'}>
-			{props.children}
+		<button className={buttonClasses} type={type} onClick={onClick}>
+			{children}
 		</button>
 	)
 }

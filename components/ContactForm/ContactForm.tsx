@@ -1,24 +1,37 @@
 import React, { FormEvent, useState } from 'react'
+import { Input } from '../Input'
 import { SteppedForm } from '../SteppedForm'
 import { FormStep } from '../SteppedForm/FormStep'
 
 export const ContactForm: React.FC = () => {
-	const [input1, setInput1] = useState('')
-	const [input2, setInput2] = useState('')
+	const [name, setName] = useState('')
+	const [email, setEmail] = useState('')
+	const [message, setMessage] = useState('')
 
 	return (
 		<div className="flex">
 			<SteppedForm onSubmit={(event: FormEvent<Element>) => {}}>
 				<FormStep>
-					<input
-						value={input1}
-						onChange={(event: any) => setInput1(event.target.value)}
+					<Input
+						label="Your beautiful name"
+						id="name-input"
+						value={name}
+						onChange={(event: any) => setName(event.target.value)}
 					/>
 				</FormStep>
 				<FormStep>
-					<input
-						value={input2}
-						onChange={(event: any) => setInput2(event.target.value)}
+					<Input
+						label="E-mail, please"
+						value={email}
+						onChange={(event: any) => setEmail(event.target.value)}
+					/>
+				</FormStep>
+
+				<FormStep>
+					<Input
+						label="Your message"
+						value={message}
+						onChange={(event: any) => setMessage(event.target.value)}
 					/>
 				</FormStep>
 			</SteppedForm>

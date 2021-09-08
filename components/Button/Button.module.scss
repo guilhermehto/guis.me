@@ -32,3 +32,16 @@
 		top: 35%;
 	}
 }
+
+.center-shadow {
+	&::after {
+		content: '';
+		width: 70%;
+		height: 80%;
+		background: theme('colors.primary');
+		position: absolute;
+		z-index: -5;
+		right: 15%;
+		top: 35%;
+	}
+}
